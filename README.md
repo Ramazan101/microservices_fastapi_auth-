@@ -25,12 +25,12 @@
 git clone git@github.com:Ramazan101/microservices_fastapi_auth-.git
 cd microservices_fastapi_auth-
 2. Создайте и активируйте виртуальное окружение
-Bash
+
 python -m venv .venv
 # Для Windows (PowerShell):
 .venv\Scripts\activate
 3. Установите зависимости
-Bash
+
 pip install -r req.txt
 4. Настройка переменных окружения
 Создайте файл .env внутри папки mini_shop_app/ и добавьте настройки безопасности:
@@ -43,10 +43,8 @@ REFRESH_TOKEN_LIFETIME=7
 5. Примените миграции базы данных
 Создайте таблицы в SQLite:
 
-Bash
 python -m alembic -c mini_shop_app/alembic.ini upgrade head
 6. Запустите сервер
-Bash
 python main.py
 Приложение будет доступно по адресу: http://127.0.0.1:8000.
 
