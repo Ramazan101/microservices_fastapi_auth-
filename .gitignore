@@ -1,0 +1,17 @@
+mini_shop_app/.env
+.env
+.venv/
+venv/
+ENV/
+
+*.db
+*.sqlite3
+
+
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.idea/
+.vscode/
